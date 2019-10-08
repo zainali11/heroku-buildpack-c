@@ -16,6 +16,7 @@ function indent() {
 }
 
 cd $BUILD_DIR
+cd ./TestC
 echo "-----> BUILD DIR"
 echo $BUILD_DIR
 echo "-----> DIR CONTENTS"
