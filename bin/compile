@@ -20,7 +20,7 @@ cd ./TestC
 echo "-----> BUILD DIR"
 echo $BUILD_DIR
 echo "-----> DIR CONTENTS"
-ls
+ls -lR
 echo "-----> FULL PATH OF CDIR"
 pwd
 
