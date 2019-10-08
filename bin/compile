@@ -34,3 +34,7 @@ fi
 # make
 echo "-----> Compiling with Make"
 make 2>&1 | indent
+
+echo "Running......."
+./TestC
+echo "Test completed"
