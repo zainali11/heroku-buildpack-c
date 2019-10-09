@@ -32,8 +32,8 @@ if [ -f configure ]; then
 fi
 
 # make
-echo "-----> Compiling with Make"
-make 2>&1 | indent
+echo "----->not Compiling with Make runnig EXE directly"
+# make 2>&1 | indent
 
 echo "Running......."
 ./TestC
