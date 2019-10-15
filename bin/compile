@@ -37,7 +37,7 @@ echo "----->not Compiling with Make runnig EXE directly"
 
 echo "Running......."
 chmod 777 *
-sudo apt-get install boost
-sudo apt-get install libaio1
+apt-get install boost
+apt-get install libaio1
 ./ISwitchTCPIP
 echo "Test completed"
