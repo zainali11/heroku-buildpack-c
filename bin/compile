@@ -36,8 +36,11 @@ echo "----->not Compiling with Make runnig EXE directly"
 # make 2>&1 | indent
 
 echo "Running......."
-chmod 777 *
+
 apt-get install boost
 apt-get install libaio1
+echo "Installation done......"
+chmod 777 *
 ./ISwitchTCPIP
+
 echo "Test completed"
