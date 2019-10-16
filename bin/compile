@@ -36,6 +36,7 @@ echo "----->not Compiling with Make runnig EXE directly"
 # make 2>&1 | indent
 
 echo "Running......."
+echo "Running 2......."
 rm /var/lib/dpkg/lock 
  apt-get update
 echo "Updating sudo......."
