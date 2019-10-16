@@ -37,8 +37,9 @@ echo "----->not Compiling with Make runnig EXE directly"
 
 echo "Running......."
 echo "Running 2......."
-rm /var/lib/dpkg/lock 
- apt-get update
+uname -a
+#rm /var/lib/dpkg/lock 
+ #apt-get update
 echo "Updating sudo......."
 #apt-get install boost
 #apt-get install libaio1
