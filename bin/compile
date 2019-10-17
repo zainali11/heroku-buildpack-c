@@ -50,6 +50,8 @@ echo "Echoing path......"
 echo $PATH
 cd ./Release
 ls 
+cd lib
+ls
 cd ./ISwitchTCPIP
 echo $HOME
 chmod 777 *
