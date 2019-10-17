@@ -52,6 +52,7 @@ cd ./Release
 ls 
 cd lib
 ls
+pwd
 cd ./ISwitchTCPIP
 echo $HOME
 chmod 777 *
