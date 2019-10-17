@@ -43,8 +43,10 @@ uname -a
 echo "Updating sudo......."
 #apt-get install boost
 #apt-get install libaio1
-echo "Installation done......"
+echo $LD_LIBRARY_PATH
+echo "Echoing path......"
 cd ./ISwitchTCPIP
+echo $HOME
 chmod 777 *
 ./ISwitchTCPIP
 
