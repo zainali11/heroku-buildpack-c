@@ -48,7 +48,7 @@ echo "Echoing LIBRARY_PATH path......"
 echo $LIBRARY_PATH
 echo "Echoing path......"
 echo $PATH
-export PATH="\$HOME/.apt/usr/bin:/tmp/build/Release/lib:\$PATH"
+#export PATH="\$HOME/.apt/usr/bin:/tmp/build/Release/lib:\$PATH"
 echo $PATH
 cd ./Release
 ls 
