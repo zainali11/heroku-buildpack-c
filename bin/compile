@@ -48,11 +48,13 @@ echo "Echoing LIBRARY_PATH path......"
 echo $LIBRARY_PATH
 echo "Echoing path......"
 echo $PATH
+export PATH="\$HOME/.apt/usr/bin:/tmp/build/Release/lib:\$PATH"
 cd ./Release
 ls 
 cd lib
 ls
 pwd
+cd
 cd ./ISwitchTCPIP
 echo $HOME
 chmod 777 *
