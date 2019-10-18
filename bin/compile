@@ -49,13 +49,12 @@ echo $LIBRARY_PATH
 echo "Echoing path......"
 echo $PATH
 #export PATH="\$HOME/.apt/usr/bin:/tmp/build/Release/lib:\$PATH"
+mv /tmp/build/Release/lib/libCommonSharedLib.so /usr/local/bin
+mv /tmp/build/Release/lib/libDALSharedLib.so /usr/local/bin
+
 echo $PATH
 cd ./Release
-ls 
-cd lib
-ls
 pwd
-cd
 cd ./ISwitchTCPIP
 echo $HOME
 chmod 777 *
