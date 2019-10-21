@@ -48,10 +48,9 @@ echo "Echoing LIBRARY_PATH path......"
 echo $LIBRARY_PATH
 echo "Echoing path......"
 echo $PATH
-#export PATH="\$HOME/.apt/usr/bin:/tmp/build/Release/lib:\$PATH"
-mv /tmp/build/Release/lib/libCommonSharedLib.so /usr/local/bin
-mv /tmp/build/Release/lib/libDALSharedLib.so /usr/local/bin
-
+mkdir APP/bin
+config:set PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/app/bin
+#chmod +x ./bin/program
 echo $PATH
 cd ./Release
 pwd
