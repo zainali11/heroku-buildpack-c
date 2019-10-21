@@ -52,6 +52,7 @@ echo $PATH
 config:set PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:Release/lib
 #chmod +x ./bin/program
 echo $PATH
+cd
 cd ./Release
 pwd
 cd ./ISwitchTCPIP
