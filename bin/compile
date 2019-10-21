@@ -52,6 +52,7 @@ uname -a
 #config:set PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:Release/lib
 #chmod +x ./bin/program
 
+ls /tmp/build/Release/lib/
 echo "chmod to /tmp/build/Release/lib/*.*"
 chmod 777 /tmp/build/Release/lib/*.*
 echo "exporting to LD_LP"
