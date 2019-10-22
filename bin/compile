@@ -52,19 +52,25 @@ ln -s libocci.so.12.1 libocci.so
 BP_DIR=$(cd $(dirname ${0:-}); cd ..; pwd)
 echo "BP_DIR: ${BP_DIR}"
 
+ls $CLIENT_BUILD_DIR/instantclient_12_1/*.*
+ls $BUILD_DIR/.apt/lib/x86_64-linux-gnu/*.*
+
+chmod 777 $CLIENT_BUILD_DIR/instantclient_12_1/*.*
+chmod 777 $BUILD_DIR/.apt/lib/x86_64-linux-gnu/*.*
+
 cat <<EOT > $BP_DIR/export
-export LD_LIBRARY_PATH=$CLIENT_BUILD_DIR/instantclient/:$BUILD_DIR/.apt/lib/x86_64-linux-gnu/${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}
-export OCI_LIB_DIR=$CLIENT_BUILD_DIR/instantclient
-export OCI_INC_DIR=$CLIENT_BUILD_DIR/instantclient/sdk/include
+export LD_LIBRARY_PATH=$CLIENT_BUILD_DIR/instantclient_12_1/:$BUILD_DIR/.apt/lib/x86_64-linux-gnu/${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}
+#export OCI_LIB_DIR=$CLIENT_BUILD_DIR/instantclient
+#export OCI_INC_DIR=$CLIENT_BUILD_DIR/instantclient/sdk/include
 EOT
 
 cat $BP_DIR/export
 
-if [ ! -d "$BUILD_DIR/.profile.d" ]; then
-  mkdir $BUILD_DIR/.profile.d
-fi
+#if [ ! -d "$BUILD_DIR/.profile.d" ]; then
+#  mkdir $BUILD_DIR/.profile.d
+#fi
 
-cp $BP_DIR/profile/* $BUILD_DIR/.profile.d/
+#cp $BP_DIR/profile/* $BUILD_DIR/.profile.d/
 
 echo "-----> Oracle Client Installed"
 echo "------------------"
