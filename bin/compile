@@ -39,27 +39,27 @@ echo "------------------"
 CLIENT_BUILD_DIR=$BUILD_DIR/.oracle-build
 mkdir -p $CLIENT_BUILD_DIR
 cd $CLIENT_BUILD_DIR
-curl -s -S -L https://github.com/PaulCampbell/docker-node-oracle/raw/master/oracle/linux/instantclient-basic-linux.x64-12.1.0.2.0.zip > instantclient-basic-linux.x64-12.1.0.2.0.zip
-curl -s -S -L https://github.com/PaulCampbell/docker-node-oracle/raw/master/oracle/linux/instantclient-sdk-linux.x64-12.1.0.2.0.zip > instantclient-sdk-linux.x64-12.1.0.2.0.zip
-unzip instantclient-basic-linux.x64-12.1.0.2.0.zip && rm instantclient-basic-linux.x64-12.1.0.2.0.zip
-unzip instantclient-sdk-linux.x64-12.1.0.2.0.zip && rm instantclient-sdk-linux.x64-12.1.0.2.0.zip
+curl -s -S -L https://download.oracle.com/otn/linux/instantclient/111070/basic-11.1.0.70-linux-x86_64.zip > basic-11.1.0.70-linux-x86_64.zip
+curl -s -S -L https://download.oracle.com/otn/linux/instantclient/111070/sdk-11.1.0.7.0-linux-x86_64.zip > sdk-11.1.0.7.0-linux-x86_64.zip
+unzip basic-11.1.0.70-linux-x86_64.zip && rm basic-11.1.0.70-linux-x86_64.zip
+unzip sdk-11.1.0.7.0-linux-x86_64.zip && rm sdk-11.1.0.7.0-linux-x86_64.zip
 echo "unzip finished"
 
-cd instantclient_12_1
-ln -s libclntsh.so.12.1 libclntsh.so
-ln -s libocci.so.12.1 libocci.so
+cd basic_11_1
+ln -s libclntsh.so.11.1 libclntsh.so
+ln -s libocci.so.11.1 libocci.so
 
 BP_DIR=$(cd $(dirname ${0:-}); cd ..; pwd)
 echo "BP_DIR: ${BP_DIR}"
 
-ls $CLIENT_BUILD_DIR/instantclient_12_1/*.*
+ls $CLIENT_BUILD_DIR/basic_11_1/*.*
 #ls $BUILD_DIR/.apt/lib/x86_64-linux-gnu/*.*
 
-chmod 777 $CLIENT_BUILD_DIR/instantclient_12_1/*.*
+chmod 777 $CLIENT_BUILD_DIR/basic_11_1/*.*
 #chmod 777 $BUILD_DIR/.apt/lib/x86_64-linux-gnu/*.*
 
 cat <<EOT > $BP_DIR/export
-export LD_LIBRARY_PATH=$CLIENT_BUILD_DIR/instantclient_12_1/:$BUILD_DIR/.apt/lib/x86_64-linux-gnu/${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}
+export LD_LIBRARY_PATH=$CLIENT_BUILD_DIR/basic_11_1/:$BUILD_DIR/.apt/lib/x86_64-linux-gnu/${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}
 #export OCI_LIB_DIR=$CLIENT_BUILD_DIR/instantclient
 #export OCI_INC_DIR=$CLIENT_BUILD_DIR/instantclient/sdk/include
 EOT
