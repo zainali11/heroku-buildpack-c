@@ -61,11 +61,11 @@ echo $PATH
 cd
 cd ./Release
 pwd
-#cd ./ISwitchTCPIP
+#cd ./SvcController
 echo "exporting to Path of tcp"
 ls 
 echo $HOME
 chmod 777 *
-./ISwitchTCPIP
+./SvcController
 
 echo "Test completed"
