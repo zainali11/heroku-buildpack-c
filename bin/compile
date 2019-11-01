@@ -66,10 +66,10 @@ echo "exporting to Path of tcp"
 ls 
 echo $HOME
 
+chmod 777 *
+
 ln -s ./libcrypto++.so.9.0.0 ./libcrypto++.so.9
 ln -s ./libcrypto++.so.9 ./libcrypto++.so
-
-chmod 777 *
 
 readlink ./libcrypto++.so
 readlink ./libcrypto++.so.9
