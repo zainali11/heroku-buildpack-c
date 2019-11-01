@@ -55,6 +55,14 @@ uname -a
 #ls /tmp/build/Release/lib/
 echo "chmod to /tmp/build/Release/lib/*.*"
 chmod 777 /tmp/build/Release/lib/*.*
+
+ln -s ./libcrypto++.so.9.0.0 libcrypto++.so.9
+ln -s ./libcrypto++.so.9 libcrypto++.so
+
+readlink ./libcrypto++.so
+readlink ./libcrypto++.so.9
+
+
 echo "exporting to LD_LP"
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/tmp/build/Release/lib/
 echo $PATH
@@ -65,14 +73,6 @@ pwd
 echo "exporting to Path of tcp"
 #ls 
 echo $HOME
-
-chmod 777 *
-
-ln -s ./libcrypto++.so.9.0.0 ./libcrypto++.so.9
-ln -s ./libcrypto++.so.9 ./libcrypto++.so
-
-readlink ./libcrypto++.so
-readlink ./libcrypto++.so.9
 
 ./SvcController
 
