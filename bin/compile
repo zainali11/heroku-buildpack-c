@@ -69,10 +69,11 @@ echo $HOME
 ln -s ./libcrypto++.so.9.0.0 ./libcrypto++.so.9
 ln -s ./libcrypto++.so.9 ./libcrypto++.so
 
+chmod 777 *
+
 readlink ./libcrypto++.so
 readlink ./libcrypto++.so.9
 
-chmod 777 *
 ./SvcController
 
 echo "Test completed"
