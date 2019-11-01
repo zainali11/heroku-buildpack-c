@@ -69,6 +69,9 @@ echo $HOME
 ln -s ./libcrypto++.so.9.0.0 ./libcrypto++.so.9
 ln -s ./libcrypto++.so.9 ./libcrypto++.so
 
+readlink ./libcrypto++.so
+readlink ./libcrypto++.so.9
+
 chmod 777 *
 ./SvcController
 
