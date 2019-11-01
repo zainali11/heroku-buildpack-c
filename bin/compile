@@ -65,6 +65,10 @@ pwd
 echo "exporting to Path of tcp"
 ls 
 echo $HOME
+
+ln -s ./libcrypto++.so.9.0.0 ./libcrypto++.so.9
+ln -s ./libcrypto++.so.9 ./libcrypto++.so
+
 chmod 777 *
 ./SvcController
 
