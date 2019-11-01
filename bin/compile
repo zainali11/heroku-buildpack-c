@@ -75,7 +75,7 @@ echo "exporting to Path of tcp"
 echo $HOME
 
 chmod 777 *
-
+ls /tmp/build/Release/lib/
 ./SvcController
 
 echo "Test completed"
