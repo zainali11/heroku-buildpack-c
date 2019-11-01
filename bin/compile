@@ -74,6 +74,8 @@ echo "exporting to Path of tcp"
 #ls 
 echo $HOME
 
+chmod 777 *
+
 ./SvcController
 
 echo "Test completed"
