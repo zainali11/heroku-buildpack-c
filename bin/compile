@@ -60,9 +60,9 @@ chmod 777 /tmp/build/Release/lib/*.*
  rm -f /tmp/build/Release/lib/libcrypto++.so.9
  rm -f /tmp/build/Release/lib/libcrypto++.so.9.0.0
 
-#ln -s /tmp/build/Release/lib/libcrypto++.so.9.0.0 /tmp/build/Release/lib/libcrypto++.so.9
-#ln -s /tmp/build/Release/lib/libcrypto++.so.9 /tmp/build/Release/lib/libcrypto++.so
-ln -s /tmp/build/Release/lib/libcrypto++.so.9.0.0 /tmp/build/Release/lib/libcrypto++.so
+ln -s /tmp/build/Release/lib/libcrypto++.so.9.0.0 /tmp/build/Release/lib/libcrypto++.so.9
+ln -s /tmp/build/Release/lib/libcrypto++.so.9 /tmp/build/Release/lib/libcrypto++.so
+#ln -s /tmp/build/Release/lib/libcrypto++.so.9.0.0 /tmp/build/Release/lib/libcrypto++.so
 
 #readlink /tmp/build/Release/lib/libcrypto++.so
 #readlink /tmp/build/Release/lib/libcrypto++.so.9
