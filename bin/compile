@@ -20,7 +20,7 @@ cd $BUILD_DIR
 echo "-----> BUILD DIR"
 echo $BUILD_DIR
 echo "-----> DIR CONTENTS"
-ls -lR
+#ls -lR
 echo "-----> FULL PATH OF CDIR"
 pwd
 
@@ -52,7 +52,7 @@ uname -a
 #config:set PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:Release/lib
 #chmod +x ./bin/program
 
-ls /tmp/build/Release/lib/
+#ls /tmp/build/Release/lib/
 echo "chmod to /tmp/build/Release/lib/*.*"
 chmod 777 /tmp/build/Release/lib/*.*
 echo "exporting to LD_LP"
@@ -63,7 +63,7 @@ cd ./Release
 pwd
 #cd ./SvcController
 echo "exporting to Path of tcp"
-ls 
+#ls 
 echo $HOME
 
 chmod 777 *
