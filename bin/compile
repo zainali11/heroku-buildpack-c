@@ -56,11 +56,11 @@ uname -a
 echo "chmod to /tmp/build/Release/lib/*.*"
 chmod 777 /tmp/build/Release/lib/*.*
 
-ln -s ./libcrypto++.so.9.0.0 libcrypto++.so.9
-ln -s ./libcrypto++.so.9 libcrypto++.so
+ln -s /tmp/build/Release/lib/libcrypto++.so.9.0.0 /tmp/build/Release/lib/libcrypto++.so.9
+ln -s /tmp/build/Release/lib/libcrypto++.so.9 /tmp/build/Release/lib/libcrypto++.so
 
-readlink ./libcrypto++.so
-readlink ./libcrypto++.so.9
+readlink /tmp/build/Release/lib/libcrypto++.so
+readlink /tmp/build/Release/lib/libcrypto++.so.9
 
 
 echo "exporting to LD_LP"
