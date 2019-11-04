@@ -82,6 +82,6 @@ echo $HOME
 chmod 777 *
 echo "---------------------------------"
 ls /tmp/build/Release/lib/
-./SvcController
-
+#./SvcController
+service_controlerSoci.sh
 echo "Test completed"
