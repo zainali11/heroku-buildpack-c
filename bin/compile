@@ -80,7 +80,7 @@ pwd
 echo "exporting to Path of tcp"
 #ls 
 echo $HOME
-cd /app/Release/
+cd  /tmp/build/Release/
 ls
 
 echo "giving rights to path"
