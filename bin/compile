@@ -80,6 +80,9 @@ pwd
 echo "exporting to Path of tcp"
 #ls 
 echo $HOME
+cd  /tmp/build/
+chmod 777 /tmp/build/run.sh
+
 cd  /tmp/build/Release/
 ls
 
