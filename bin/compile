@@ -81,10 +81,15 @@ echo "exporting to Path of tcp"
 #ls 
 echo $HOME
 cd /app/Release/
+
 echo "giving rights to path"
 chmod 777 *
 echo "---------------------------------"
 ls /tmp/build/Release/lib/
+
+cd /app/
+chmod 777 /app/run.sh
+chmod 777 /app/Procfile.dat
 #./SvcController
 #./service_controlerSoci.sh
 echo "Test completed"
