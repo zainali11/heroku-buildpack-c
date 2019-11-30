@@ -84,5 +84,5 @@ chmod 777 *
 echo "---------------------------------"
 ls /tmp/build/Release/lib/
 #./SvcController
-./service_controlerSoci.sh
+#./service_controlerSoci.sh
 echo "Test completed"
