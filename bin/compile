@@ -32,8 +32,7 @@ if [ -f configure ]; then
 fi
 
 # make
-cd /app/Release/
-chmod 777 *
+
 echo "----->not Compiling with Make runnig EXE directly"
 # make 2>&1 | indent
 
@@ -81,7 +80,8 @@ pwd
 echo "exporting to Path of tcp"
 #ls 
 echo $HOME
-
+cd /app/Release/
+echo "giving rights to path"
 chmod 777 *
 echo "---------------------------------"
 ls /tmp/build/Release/lib/
