@@ -89,7 +89,7 @@ ls /tmp/build/Release/lib/
 
 cd /app/
 chmod 777 /app/run.sh
-chmod 777 /app/Procfile.dat
+
 #./SvcController
 #./service_controlerSoci.sh
 echo "Test completed"
