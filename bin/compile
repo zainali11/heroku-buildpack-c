@@ -81,6 +81,7 @@ echo "exporting to Path of tcp"
 #ls 
 echo $HOME
 cd /app/Release/
+ls
 
 echo "giving rights to path"
 chmod 777 *
@@ -88,6 +89,7 @@ echo "---------------------------------"
 ls /tmp/build/Release/lib/
 
 cd /app/
+ls
 chmod 777 /app/run.sh
 
 #./SvcController
