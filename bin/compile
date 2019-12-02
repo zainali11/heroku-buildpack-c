@@ -70,8 +70,8 @@ chmod 777 /tmp/build/Release/lib/*.*
 
 
 echo "exporting to LD_LP"
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/tmp/build/Release/lib/
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/app/Release/lib/
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/tmp/build/Release/lib/"
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/app/Release/lib/"
 echo $LD_LIBRARY_PATH
 cd
 cd ./Release
